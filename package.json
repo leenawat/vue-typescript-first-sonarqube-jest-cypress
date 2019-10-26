@@ -6,7 +6,10 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "vue-cli-service test:e2e"
+    "test:e2e": "vue-cli-service test:e2e",
+    "jest": "jest --coverage --logHeapUsage --maxWorkers=2 --no-cache --config jest.config.js",
+    "jest:update": "npm run jest -- --updateSnapshot",
+    "jest:updatesonar": "npm run jest -- --updateSnapshot && sonar-scanner"
   },
   "dependencies": {
     "vue": "^2.6.10",
@@ -22,10 +25,18 @@
     "@vue/cli-plugin-unit-jest": "^3.0.1",
     "@vue/cli-service": "^3.0.1",
     "@vue/test-utils": "1.0.0-beta.29",
+    "jest-junit": "^9.0.0",
+    "jest-serializer-vue": "^2.0.2",
+    "jest-sonar-reporter": "^2.0.0",
+    "jest-vue-preprocessor": "^1.7.0",
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.0",
     "ts-jest": "^23.0.0",
     "typescript": "^3.4.3",
     "vue-template-compiler": "^2.6.10"
+  },
+  "jestSonar": {
+    "reportPath": "target/test-results/jest",
+    "reportFile": "TESTS-results-sonar.xml"
   }
 }

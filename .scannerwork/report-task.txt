@@ -1,0 +1,6 @@
+projectKey=VueTypescriptFirst
+serverUrl=http://localhost:9001
+serverVersion=7.9.1.27448
+dashboardUrl=http://localhost:9001/dashboard?id=VueTypescriptFirst
+ceTaskId=AW4Id39pRXw-zp67EG18
+ceTaskUrl=http://localhost:9001/api/ce/task?id=AW4Id39pRXw-zp67EG18

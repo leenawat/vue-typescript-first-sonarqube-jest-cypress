@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/Users/macbook/github.com/leenawat/vue-typescript-first/tests/unit/example.spec.ts">
+    <testCase name="HelloWorld.vue renders props.msg when passed" duration="37"/>
+  </file>
+</testExecutions>

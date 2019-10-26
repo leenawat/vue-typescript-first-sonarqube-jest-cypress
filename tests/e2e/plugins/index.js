@@ -14,6 +14,8 @@ module.exports = (on, config) => {
   //  watchOptions: {}
   // }))
 
+  on('task', require('@cypress/code-coverage/task'))
+  on('file:preprocessor', require('@cypress/code-coverage/use-browserify-istanbul'))
   return Object.assign({}, config, {
     fixturesFolder: 'tests/e2e/fixtures',
     integrationFolder: 'tests/e2e/specs',

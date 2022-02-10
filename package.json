@@ -29,7 +29,7 @@
     "jest-serializer-vue": "^2.0.2",
     "jest-sonar-reporter": "^2.0.0",
     "jest-vue-preprocessor": "^1.7.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "sass-loader": "^8.0.0",
     "ts-jest": "^23.0.0",
     "typescript": "^3.4.3",
